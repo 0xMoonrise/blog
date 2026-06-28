@@ -2,9 +2,13 @@
   <h1>{{ site.Title }}</h1>
   {{ with site.Params.description }}<p class="meta">{{ . }}</p>{{ end }}
   <hr>
+  {{ $posts := where site.RegularPages "Section" "posts" }}
   <ul>
-    {{ range site.RegularPages }}
-    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Date }} &mdash; {{ .Format "2006-01-02" }}{{ end }}</li>
+    {{ range first 5 $posts }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ if not .Date.IsZero }} &mdash; {{ .Date.Format "2006-01-02" }}{{ end }}</li>
     {{ end }}
   </ul>
+  {{ if gt (len $posts) 5 }}
+  <p><a href="{{ "/posts/" | relURL }}">&rarr; all posts</a></p>
+  {{ end }}
 {{ end }}
