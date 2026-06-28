@@ -1,0 +1,14 @@
+baseURL = "https://null-mind.com/"
+languageCode = "en"
+title = "blog"
+
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "Notes and learnings"
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+    tabWidth = 4
+    guessSyntax = false
