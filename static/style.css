@@ -66,3 +66,26 @@ li { margin: 0.2em 0; }
   color: var(--dim);
 }
 .nav a { margin-right: 1.4em; }
+
+.highlight { position: relative; }
+.copy-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  font-family: inherit;
+  font-size: 12px;
+  background: transparent;
+  color: var(--dim);
+  border: 1px solid var(--dim);
+  padding: 1px 7px;
+  cursor: pointer;
+  transition: opacity 0.15s, background 0.15s, color 0.15s;
+}
+.highlight:hover .copy-btn,
+.copy-btn:focus-visible { opacity: 1; }
+.copy-btn:hover {
+  background: var(--fg);
+  color: var(--bg);
+  border-color: var(--fg);
+  outline: none;
+}

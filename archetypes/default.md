@@ -4,6 +4,3 @@ date = "{{ .Date }}"
 author = "0xmoonrise"
 +++
 
-## Seccion
-
-Escribe aqui en Markdown.
