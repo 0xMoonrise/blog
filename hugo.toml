@@ -1,7 +1,7 @@
 baseURL = "https://null-mind.com/"
 languageCode = "en"
 title = "0xMoonrise"
-
+uglyURLs = true
 disableKinds = ["taxonomy", "term"]
 
 [params]
