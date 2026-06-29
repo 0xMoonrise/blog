@@ -7,7 +7,7 @@
  
 body {
   background: var(--bg);
-  color: var(--fg);
+  color: var(--dim);
   font-family: ui-monospace, 'Courier New', monospace;
   font-size: 20px;
   line-height: 1.6;
@@ -27,8 +27,8 @@ h1, h2, h3 {
   margin: 2em 0 0.6em;
 }
 h1 { 
- margin-top: 0; 
- font-size: 24px;
+  margin-top: 0;
+  font-size: 24px;
 }
  
 p { margin: 0 0 1em; }
@@ -43,7 +43,7 @@ pre {
 }
 code { font-family: inherit; }
  
-hr { border: 0; border-top: 1px solid var(--dim); margin: 2em 0; }
+hr { border: 0; border-top: 1px solid var(--dim); margin: 1em 0; }
  
 blockquote {
   margin: 1em 0;
@@ -59,7 +59,10 @@ th { font-weight: bold; }
 ul, ol { padding-left: 1.5em; }
 li { margin: 0.2em 0; }
  
-.meta { color: var(--dim); }
+.meta {
+    color: var(--dim);
+    font-weight: bold;
+}
  
 .nav {
   margin-bottom: 2em;
