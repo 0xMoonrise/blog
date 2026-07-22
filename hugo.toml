@@ -5,7 +5,7 @@ uglyURLs = true
 disableKinds = ["taxonomy", "term"]
 
 [params]
-  description = "Hi, feel free to read everything I wrote! :)"
+  description = "Hi"
 
 [markup]
   [markup.highlight]
