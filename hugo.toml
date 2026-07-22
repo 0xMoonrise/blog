@@ -6,6 +6,11 @@ disableKinds = ["taxonomy", "term"]
 
 [params]
   description = "Hi"
+  projects = [
+  "gochive",
+  "asql",
+  "simple_rc4",
+]
 
 [markup]
   [markup.highlight]

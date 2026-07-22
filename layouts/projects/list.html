@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div style="margin-top:1.5rem">
+  {{ range .Site.Params.projects }}
+    {{ $url := printf "https://api.github.com/repos/0xMoonrise/%s" . }}
+    {{ with resources.GetRemote $url }}
+      {{ $data := . | transform.Unmarshal }}
+      <div style="margin-bottom:1rem">
+        <a href="{{ $data.html_url }}">{{ $data.name }}</a>
+        <span class="muted">{{ $data.description }}</span>
+      </div>
+    {{ end }}
+  {{ end }}
+</div>
+{{ end }}
